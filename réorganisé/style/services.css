@@ -1,0 +1,63 @@
+/* services */
+/* style du bloc relatif aux prestations*/
+.d {
+    padding: 70px 60px;
+    background: white;
+}
+
+/* style du titre */
+.d0 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1a1a2e;
+}
+
+/* style de la grille des services */
+.dd {
+    display: flex;
+    gap: 24px;
+}
+
+/* style des blocs des differents services */
+.d1,
+.d2,
+.d3,
+.d4 {
+    flex: 1;
+    background: #f4f4f4;
+    padding: 28px 22px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* style des icones des differents services */
+.d1i,
+.d2i,
+.d3i,
+.d4i {
+    font-size: 36px;
+    margin-bottom: 14px;
+}
+
+/* style du titre des differents services */
+.d1t,
+.d2t,
+.d3t,
+.d4t {
+    font-size: 17px;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+
+/* style des informations sur les differents services */
+.d1p,
+.d2p,
+.d3p,
+.d4p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}

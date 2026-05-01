@@ -1,0 +1,13 @@
+* {
+    /* Supprime toutes les marges */
+    margin: 0;
+    /* Supprime tous les espacements internes */
+    padding: 0;
+}
+
+body {
+    /* la police du texte (arial) */
+    font-family: Arial;
+    /* Couleur du texte */
+    color: #333;
+}
