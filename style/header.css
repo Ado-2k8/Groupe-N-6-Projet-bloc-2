@@ -1,4 +1,3 @@
-/* Conteneur principal du header */
 .b1 {
     /* Couleur de fond (bleu très foncé) */
     background: #1a1a2e;
@@ -39,5 +38,3 @@
     /* Devient blanc quand on passe la souris */
     color: white;
 }
-/* Identifier ce qu'elle affiche */
-/* ce dont elle a besoin (images, liens, textes) */
