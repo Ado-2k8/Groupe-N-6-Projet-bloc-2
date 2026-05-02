@@ -1,7 +1,7 @@
 # Groupe-N-6-Projet-bloc-2
 # Architecture logicielle — DevStart Agency
 **Bloc 2 · Module 2 · Académie de Programmation IFRI**
-Groupe 4 · L1 Informatique · Avril 2026
+Groupe 6 · L1 Informatique · Mai 2026
 
 ---
 
@@ -104,7 +104,7 @@ styles/
 
 ---
 
-*Académie de Programmation · IFRI · 2026*# Groupe-N-6-Projet-bloc-2
+*Académie de Programmation · IFRI · 2026* Groupe-N-6-Projet-bloc-2
 
 
 
