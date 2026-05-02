@@ -1,9 +1,9 @@
-.g { 
+.g {
     padding: 70px 60px;
     background: #f9f9f9;
 }
 
-.g0 { 
+.g0 {
     font-size: 28px;
     font-weight: bold;
     color: #1a1a2e;
@@ -11,7 +11,7 @@
     margin-bottom: 36px;
 }
 
-.gf { 
+.gf {
     max-width: 600px;
     margin: 0 auto;
     display: flex;
@@ -19,7 +19,7 @@
     gap: 16px;
 }
 
-.gi { 
+.gi {
     padding: 14px 16px;
     border: 1px solid #ddd;
     border-radius: 6px;
