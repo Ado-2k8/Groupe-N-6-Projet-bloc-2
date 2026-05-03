@@ -1,4 +1,4 @@
-.b1 {
+.header {
     /* Couleur de fond (bleu très foncé) */
     background: #1a1a2e;
     /* Espace interne (haut/bas = 18px, gauche/droite = 60px) */
@@ -12,7 +12,7 @@
 }
 
 /* Logo (DevStart) */
-.b1a {
+.header__brand {
     /* Texte en blanc */
     color: white;
     /* Taille du texte */
@@ -22,7 +22,7 @@
 }
 
 /* Liens du menu */
-.b1b a {
+.header__nav a {
     /* Couleur gris clair */
     color: #ccc;
     /* Supprime le soulignement */
@@ -34,7 +34,7 @@
 }
 
 /* Effet sur les liens */
-.b1b a:hover {
+.header__nav a:hover {
     /* Devient blanc quand on passe la souris */
     color: white;
 }

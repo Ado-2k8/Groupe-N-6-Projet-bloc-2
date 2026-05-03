@@ -33,9 +33,11 @@ c'est qu'il fait trop de choses.
 ## Structure du dépôt
 
 ```
-/original      → Le code source du Module 1, non touché (branche main)
-/module2       → Le code réorganisé selon notre architecture (branche module2)
-README.md      → Ce fichier
+index.html                → Page principale
+assets/
+├── img/                  → Images du site (hero, équipe)
+└── style/                → CSS découpé par responsabilité
+README.md                 → Ce fichier
 ```
 
 > **Branches GitHub**
@@ -66,15 +68,19 @@ restait visuellement identique, puis présenté et défendu nos choix devant l'a
 
 ```
 index.html
-styles/
-├── base.css          → Reset, variables, typographie globale
-├── header.css        → Navigation et logo
-├── hero.css          → Section d'accroche
-├── services.css      → Cartes services
-├── about.css         → Section À propos
-├── testimonials.css  → Témoignages clients
-├── contact.css       → Formulaire de contact
-└── footer.css        → Pied de page
+assets/
+├── img/
+│   ├── hero.png
+│   └── team.png
+└── style/
+    ├── base.css          → Reset, variables, typographie globale
+    ├── header.css        → Navigation et logo
+    ├── hero.css          → Section d'accroche
+    ├── services.css      → Cartes services
+    ├── about.css         → Section À propos
+    ├── testimonials.css  → Témoignages clients
+    ├── contact.css       → Formulaire de contact
+    └── footer.css        → Pied de page
 ```
 
 ---

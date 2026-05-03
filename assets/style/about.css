@@ -1,4 +1,4 @@
-.e {
+.about {
     display: flex;
     padding: 70px 60px;
     background: #f0f0f5;
@@ -6,34 +6,34 @@
     align-items: center;
 }
 
-.e1 {
+.about__media {
     flex: 1;
 }
 
-.eimg {
+.about__image {
     width: 100%;
     border-radius: 12px;
 }
 
-.e2 {
+.about__content {
     flex: 1;
 }
 
-.e2t {
+.about__title {
     font-size: 28px;
     font-weight: bold;
     color: #1a1a2e;
     margin-bottom: 18px;
 }
 
-.e2p {
+.about__text {
     font-size: 15px;
     color: #555;
     line-height: 1.7;
     margin-bottom: 14px;
 }
 
-.e2b a {
+.about__cta a {
     display: inline-block;
     margin-top: 10px;
     background: #1a1a2e;

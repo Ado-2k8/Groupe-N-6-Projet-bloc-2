@@ -1,4 +1,4 @@
-.h {
+.footer {
     background: #0f0f1a;
     padding: 30px 60px;
     display: flex;
@@ -6,23 +6,23 @@
     align-items: center;
 }
 
-.h1 {
+.footer__copyright {
     color: #aaa;
     font-size: 13px;
 }
 
-.h2 a {
+.footer__social a {
     color: #aaa;
     text-decoration: none;
     margin-left: 18px;
     font-size: 13px;
 }
 
-.h2 a:hover {
+.footer__social a:hover {
     color: white;
 }
 
-.h3 {
+.footer__email {
     color: #aaa;
     font-size: 13px;
 }

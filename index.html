@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-<title>site</title>
-<link rel="stylesheet" href="style/base.css">
-<link rel="stylesheet" href="style/header.css">
-<link rel="stylesheet" href="style/hero.css">
-<link rel="stylesheet" href="style/services.css">
-<link rel="stylesheet" href="style/testimonials.css">
-<link rel="stylesheet" href="style/about.css">
-<link rel="stylesheet" href="style/contact.css">
-<link rel="stylesheet" href="style/footer.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevStart Agency</title>
+<link rel="stylesheet" href="assets/style/base.css">
+<link rel="stylesheet" href="assets/style/header.css">
+<link rel="stylesheet" href="assets/style/hero.css">
+<link rel="stylesheet" href="assets/style/services.css">
+<link rel="stylesheet" href="assets/style/testimonials.css">
+<link rel="stylesheet" href="assets/style/about.css">
+<link rel="stylesheet" href="assets/style/contact.css">
+<link rel="stylesheet" href="assets/style/footer.css">
 </head>
 
 <body>
 
 <!-- ======= haut ======= -->
-<div class="b1">
+<div class="header">
   <!-- bloc de navigation contenant le nom de l'agence et les liens vers les différentes sections du site -->
-  <div class="b1a">DevStart</div>
-  <div class="b1b">
+  <div class="header__brand">DevStart</div>
+  <div class="header__nav">
     <a href="#">acc</a>
     <a href="#">nous</a>
     <a href="#">serv</a>
@@ -27,120 +29,131 @@
 </div>
 
 <!-- section du milieu haut -->
-<div class="c">
-  <div class="c1">
-    <div class="c1a">On construit vos rêves numériques</div>
-    <div class="c1b">Agence web spécialisée dans la création de sites modernes et performants pour les entreprises qui veulent se démarquer.</div>
-    <div class="c1c"><a href="#">Commencer</a></div>
+<div class="hero">
+  <div class="hero__content">
+    <div class="hero__title">On construit vos rêves numériques</div>
+    <div class="hero__text">Agence web spécialisée dans la création de sites modernes et performants pour les entreprises qui veulent se démarquer.</div>
+    <div class="hero__cta"><a href="#">Commencer</a></div>
   </div>
+<<<<<<< HEAD
   <div class="c2">
     <img src="assets/hero.png">
+=======
+  <div class="hero__media">
+    <img class="hero__image" src="assets/img/hero.png" alt="Illustration de présentation DevStart">
+>>>>>>> 7329a94 (Refactor class naming and align asset paths.)
   </div>
 </div>
 
 <!-- les trucs qu'on fait -->
 <!-- les prestations -->
-<div class="d">
+<div class="services">
   <!-- titre du bloc -->
-  <div class="d0">Ce qu'on fait</div>
+  <div class="services__title">Ce qu'on fait</div>
   <!-- bloc présentant les services -->
-  <div class="dd">
+  <div class="services__grid">
     <!-- bloc présentant le service de design -->
-    <div class="d1">
+    <div class="service-card">
       <!-- icone du service -->
-      <div class="d1i">🎨</div>
+      <div class="service-card__icon">🎨</div>
       <!-- nom du service -->
-      <div class="d1t">Design</div>
+      <div class="service-card__title">Design</div>
       <!-- description du service -->
-      <div class="d1p">On crée des interfaces belles et modernes adaptées à votre marque.</div>
+      <div class="service-card__description">On crée des interfaces belles et modernes adaptées à votre marque.</div>
     </div>
     <!-- bloc présentant le service de développement -->
-    <div class="d2">
+    <div class="service-card">
       <!-- icone du service -->
-      <div class="d2i">💻</div>
+      <div class="service-card__icon">💻</div>
       <!-- nom du service -->
-      <div class="d2t">Développement</div>
+      <div class="service-card__title">Développement</div>
       <!-- description du service -->
-      <div class="d2p">Sites rapides, propres et bien codés pour tous les écrans.</div>
+      <div class="service-card__description">Sites rapides, propres et bien codés pour tous les écrans.</div>
     </div>
     <!-- bloc présentant le service de marketing digital -->
-    <div class="d3">
+    <div class="service-card">
       <!-- icone du service -->
-      <div class="d3i">📈</div>
+      <div class="service-card__icon">📈</div>
       <!-- nom du service -->
-      <div class="d3t">Marketing digital</div>
+      <div class="service-card__title">Marketing digital</div>
       <!-- description du service -->
-      <div class="d3p">Stratégies SEO et réseaux sociaux pour booster votre visibilité.</div>
+      <div class="service-card__description">Stratégies SEO et réseaux sociaux pour booster votre visibilité.</div>
     </div>
     <!-- bloc présentant le service de maintenance -->
-    <div class="d4">
+    <div class="service-card">
       <!-- icone du service -->
-      <div class="d4i">🔧</div>
+      <div class="service-card__icon">🔧</div>
       <!-- nom du service -->
-      <div class="d4t">Maintenance</div>
+      <div class="service-card__title">Maintenance</div>
       <!-- description du service -->
-      <div class="d4p">Suivi et mises à jour régulières pour que votre site reste au top.</div>
+      <div class="service-card__description">Suivi et mises à jour régulières pour que votre site reste au top.</div>
     </div>
   </div>
 </div>
 
 <!-- qui on est -->
+<<<<<<< HEAD
 <div class="e">
   <div class="e1">
     <img src="assets/team.png" class="eimg">
+=======
+<div class="about">
+  <div class="about__media">
+    <img src="assets/img/team.png" class="about__image" alt="Équipe DevStart Agency">
+>>>>>>> 7329a94 (Refactor class naming and align asset paths.)
   </div>
-  <div class="e2">
-    <div class="e2t">À propos de nous</div>
-    <div class="e2p">DevStart Agency est une jeune agence fondée par des passionnés du numérique. Notre équipe de 8 personnes accompagne les entreprises dans leur transformation digitale depuis 2021.</div>
-    <div class="e2p">On croit que chaque entreprise mérite un site web qui lui ressemble vraiment.</div>
-    <div class="e2b"><a href="#">Notre histoire</a></div>
+  <div class="about__content">
+    <div class="about__title">À propos de nous</div>
+    <div class="about__text">DevStart Agency est une jeune agence fondée par des passionnés du numérique. Notre équipe de 8 personnes accompagne les entreprises dans leur transformation digitale depuis 2021.</div>
+    <div class="about__text">On croit que chaque entreprise mérite un site web qui lui ressemble vraiment.</div>
+    <div class="about__cta"><a href="#">Notre histoire</a></div>
   </div>
 </div>
 
 <!-- les clients qui parlent -->
-<div class="f">
-  <div class="f0">Ils nous font confiance</div>
-  <div class="ff">
+<div class="testimonials">
+  <div class="testimonials__title">Ils nous font confiance</div>
+  <div class="testimonials__grid">
 
-    <div class="f1">
-      <div class="f1t">"Excellent travail, livré en temps et en heure. Notre site a doublé notre taux de conversion."</div>
-      <div class="f1n">— Koffi A., Directeur, BenTech</div>
+    <div class="testimonial-card">
+      <div class="testimonial-card__quote">"Excellent travail, livré en temps et en heure. Notre site a doublé notre taux de conversion."</div>
+      <div class="testimonial-card__author">— Koffi A., Directeur, BenTech</div>
     </div>
 
-    <div class="f2">
-      <div class="f2t">"Une équipe sérieuse et à l'écoute. Je recommande sans hésiter."</div>
-      <div class="f2n">— Mariame D., CEO, ModoShop</div>
+    <div class="testimonial-card">
+      <div class="testimonial-card__quote">"Une équipe sérieuse et à l'écoute. Je recommande sans hésiter."</div>
+      <div class="testimonial-card__author">— Mariame D., CEO, ModoShop</div>
     </div>
 
-    <div class="f3">
-      <div class="f3t">"Ils ont compris notre vision dès le premier rendez-vous. Résultat impeccable."</div>
-      <div class="f3n">— Romuald S., Fondateur, GreenFood Bénin</div>
+    <div class="testimonial-card">
+      <div class="testimonial-card__quote">"Ils ont compris notre vision dès le premier rendez-vous. Résultat impeccable."</div>
+      <div class="testimonial-card__author">— Romuald S., Fondateur, GreenFood Bénin</div>
     </div>
 
   </div>
 </div>
 
 <!-- formulaire contact -->
-<div class="g">
-  <div class="g0">Contactez-nous</div>
-  <div class="gf">
-    <input type="text" placeholder="Nom complet" class="gi">
-    <input type="text" placeholder="Email" class="gi">
-    <input type="text" placeholder="Sujet" class="gi">
-    <textarea placeholder="Votre message..." class="gt"></textarea>
-    <button class="gb">Envoyer</button>
+<div class="contact">
+  <div class="contact__title">Contactez-nous</div>
+  <div class="contact__form">
+    <input type="text" placeholder="Nom complet" class="contact__input">
+    <input type="text" placeholder="Email" class="contact__input">
+    <input type="text" placeholder="Sujet" class="contact__input">
+    <textarea placeholder="Votre message..." class="contact__message"></textarea>
+    <button class="contact__button">Envoyer</button>
   </div>
 </div>
 
 <!-- bas de page -->
-<div class="h">
-  <div class="h1">DevStart Agency &copy; 2024</div>
-  <div class="h2">
+<div class="footer">
+  <div class="footer__copyright">DevStart Agency &copy; 2024</div>
+  <div class="footer__social">
     <a href="#">Facebook</a>
     <a href="#">Instagram</a>
     <a href="#">LinkedIn</a>
   </div>
-  <div class="h3">contact@devstart.bj</div>
+  <div class="footer__email">contact@devstart.bj</div>
 </div>
 
 </body>

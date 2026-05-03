@@ -1,10 +1,10 @@
-.f {
+.testimonials {
   padding: 70px 60px;  /* espacement intérieur */
   background: #1a1a2e; /* fond bleu très foncé pour contraster avec le reste */
 }
 
 /* Titre de section | Nom suggéré : .section-title */
-.f0 {
+.testimonials__title {
   font-size: 28px;      /* même taille que les autres titres */
   font-weight: bold;    /* en gras */
   color: white;         /* blanc sur fond sombre */
@@ -13,7 +13,7 @@
 }
 
 /* Conteneur des cartes | Nom suggéré : .testimonials-grid */
-.ff {
+.testimonials__grid {
   display: flex; /* aligne les 3 cartes côte à côte */
   gap: 24px;     /* espace entre chaque carte */
 }
@@ -21,7 +21,7 @@
 /* Les 3 cartes témoignages.
    Problème : même style répété 3 fois, une seule classe aurait suffi.
    Nom suggéré : .testimonial-card */
-.f1, .f2, .f3 {
+.testimonial-card {
   flex: 1;                        /* chaque carte prend la même largeur */
   background: #16213e;            /* bleu un peu plus clair que le fond de section */
   padding: 28px;                  /* espacement intérieur */
@@ -30,7 +30,7 @@
 }
 
 /* Texte de la citation | Nom suggéré : .testimonial-quote */
-.f1t, .f2t, .f3t {
+.testimonial-card__quote {
   font-size: 14px;      /* texte assez petit */
   color: #ccc;          /* gris clair sur fond sombre */
   line-height: 1.7;     /* bonne lisibilité */
@@ -39,7 +39,7 @@
 }
 
 /* Nom du client | Nom suggéré : .testimonial-author */
-.f1n, .f2n, .f3n {
+.testimonial-card__author {
   font-size: 13px;    /* plus petit que la citation */
   color: #e94560;     /* rouge/rose, même couleur que le bouton hero */
   font-weight: bold;  /* en gras pour mettre en valeur le nom */
