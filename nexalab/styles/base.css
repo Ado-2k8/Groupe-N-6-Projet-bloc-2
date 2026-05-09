@@ -33,7 +33,7 @@
     --radius-sm: 0.25rem;   /* 4px */
     --radius-md: 0.5rem;    /* 8px */
     --radius-lg: 1rem;      /* 16px */
-    --radius-pill: 9999px;  /* Pour les boutons arrondis */
+    --radius-pill: 8px;  /* Pour les boutons arrondis */
 
     /* --- Transitions --- */
     --transition-fast: 0.2s ease-in-out;
