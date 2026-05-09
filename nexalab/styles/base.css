@@ -1,0 +1,175 @@
+
+/* 1. Importation des polices Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700&display=swap');
+
+/* 2. VARIABLES GLOBALES (Design du Site) */
+:root {
+    /* --- Palette de Couleurs --- */
+    --bg-main: #051424;                 /* Arrière-plan général */
+    --bg-surface: #122131;              /* Arrière-plan des sections/cartes */
+    --bg-surface-variant: #273647;      /* Arrière-plan secondaire (survol, bordures) */
+    --bg-surface-lowest: #010f1f;       /* Arrière-plan alternatif ultra sombre */
+
+    /* --- Couleurs d'Accentuation --- */
+    --accent-primary: #00f5ff;          /* Cyan vibrant (Boutons, Icônes) */
+    --accent-primary-light: #e9feff;    /* Cyan très clair (Gros Titres) */
+    --accent-primary-dim: #00dce5;      /* Cyan assombri (Dégradés) */
+    
+    /* --- Couleurs de Texte --- */
+    --text-main: #d4e4fa;               /* Texte courant */
+    --text-muted: #b9caca;              /* Sous-titres, descriptions */
+
+    /* --- Typographie --- */
+    --font-heading: 'Sora', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* --- Espacements & Grilles --- */
+    --container-max: 1440px;
+    --padding-mobile: 20px;
+    --padding-desktop: 64px;
+    --gutter: 24px;
+
+    /* --- Bordures (Radius) --- */
+    --radius-sm: 0.25rem;   /* 4px */
+    --radius-md: 0.5rem;    /* 8px */
+    --radius-lg: 1rem;      /* 16px */
+    --radius-pill: 9999px;  /* Pour les boutons arrondis */
+
+    /* --- Transitions --- */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+}
+
+/* 3. RESET CSS (Clean Code) */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+     /* Défilement fluide pour les liens d'ancrage */
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+/* 4. TYPOGRAPHIE DE BASE */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--accent-primary-light);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+/* Responsive typography avec la fonction clamp() */
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem); 
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+}
+
+h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 600;
+}
+
+p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color var(--transition-fast);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/* 5. CLASSES UTILITAIRES GLOBALES */
+
+/* Conteneur principal */
+.container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--padding-mobile);
+}
+
+/* Adaptation du padding conteneur sur Desktop */
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 var(--padding-desktop);
+    }
+}
+
+/* Image responsive de base */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* 6. EFFETS UI (Glassmorphism & Boutons) */
+
+/* Effet Verre Dépoli (Navbar, Cartes) */
+.glass-panel {
+    background-color: rgba(31, 41, 55, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Style de base pour tous les boutons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 2rem;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.875rem; /* 14px */
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    border: none;
+    transition: all var(--transition-normal);
+}
+
+/* Bouton Principal (Call To Action) */
+.btn-primary {
+    background-color: var(--accent-primary);
+    color: #000; 
+}
+
+.btn-primary:hover {
+    box-shadow: 0px 0px 15px rgba(0, 245, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+/* Bouton Secondaire (Outline) */
+.btn-outline {
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-outline:hover {
+    background-color: var(--bg-surface-variant);
+    border-color: transparent;
+}
