@@ -35,3 +35,39 @@
      animation: fa-beat-fade 1.2s ease-in-out infinite;
      transform-origin: center;
  }
+
+ #hero {
+    margin: auto;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero .container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: red;
+}
+#hero .container .container-left{
+    width: 50%;
+    background: orange;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#hero .container .container-right{
+    width: 50%;
+    background: green;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
