@@ -19,7 +19,7 @@
     /* Cyan très clair (Gros Titres) */
     --accent-primary-dark: #00dce5;
     /* Cyan assombri (Dégradés) */
-    
+
     /* --- Couleurs de Texte --- */
     /* Texte courant */
     --text-main: #d4e4fa;
@@ -35,9 +35,10 @@
     --transition-fast: 0.2s ease-in-out;
     --transition-normal: 0.3s ease-in-out;
 }
+
 /* Reset du CSS */
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -65,7 +66,12 @@ img {
     display: block;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     color: var(--accent-primary-light);
     line-height: 1.2;
@@ -75,6 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
     color: var(--text-muted);
     margin-bottom: 1rem;
+    font-size: large;
 }
 
 a {
@@ -122,4 +129,12 @@ a {
     background-color: var(--bg-surface-variant);
     border-color: transparent;
     transition: all var(--transition-normal);
+}
+
+.glass-effect {
+    background-color: rgba(31, 41, 55, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    /* Compatibilité Safari */
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
