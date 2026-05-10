@@ -1,0 +1,37 @@
+ .fa-svg {
+     width: 1em;
+     height: 1em;
+     display: inline-block;
+     vertical-align: -0.125em;
+ }
+
+ .fa-svg--white {
+     filter: brightness(0) invert(1);
+ }
+
+ .fa-svg--black {
+     filter: none;
+ }
+
+ .fa-svg--accent {
+     filter: invert(80%) sepia(86%) saturate(1762%) hue-rotate(134deg) brightness(107%) contrast(106%);
+ }
+
+ @keyframes fa-beat-fade {
+
+     0%,
+     100% {
+         transform: scale(1);
+         opacity: 1;
+     }
+
+     50% {
+         transform: scale(1.15);
+         opacity: 0.6;
+     }
+ }
+
+ .fa-anim-beat-fade {
+     animation: fa-beat-fade 1.2s ease-in-out infinite;
+     transform-origin: center;
+ }
