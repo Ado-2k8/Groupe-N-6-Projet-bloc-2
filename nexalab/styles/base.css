@@ -19,7 +19,7 @@
     /* Cyan très clair (Gros Titres) */
     --accent-primary-dark: #00dce5;
     /* Cyan assombri (Dégradés) */
-    
+
     /* --- Couleurs de Texte --- */
     /* Texte courant */
     --text-main: #d4e4fa;
@@ -35,9 +35,8 @@
     --transition-fast: 0.2s ease-in-out;
     --transition-normal: 0.3s ease-in-out;
 }
-/* Reset du CSS */
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
