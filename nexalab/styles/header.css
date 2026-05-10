@@ -78,7 +78,6 @@
     }
 
     .site-header button:hover + .site-navbar{
-        transition: ease 10.3s;
         visibility: visible;
     }
 
@@ -89,8 +88,8 @@
     .site-navbar ul {
         flex-direction: column;
         gap: 10px ;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding: 10px;
+        border-radius: 10px;
         line-height: 1.5;
     }
 
