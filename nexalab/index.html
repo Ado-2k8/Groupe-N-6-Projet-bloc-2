@@ -147,14 +147,31 @@
                     <span class="form-title">
                         <h2>Envoyez-nous un message</h2>
                     </span>
+                    <div class="bar"></div>
                     <div class="name-email">
-                        <input type="text" placeholder="Vous" id="name" required>
-                        <input type="email" placeholder="vous@entreprise.com" id="email" required>
+                        <label for="name">
+                            <span>Nom Complet</span>
+                            <input type="text" placeholder="Vous" id="name" required>
+                        </label>
+                        <br>
+                        <label for="email">
+                            <span>Email</span>
+                            <input type="email" placeholder="vous@entreprise.com" id="email" required>
+                        </label>
                     </div>
-                    <input type="tel" placeholder="Contact" id="phone" required>
-                    <input type="text" name="Sujet" id="subject" placeholder="Votre Sujet" required>
-                    <textarea rows="5" id="message" required placeholder="Comment pouvons-nous vous aider ?"></textarea>
-                    <button type="submit">Envoyer le message <img class="fa-svg fa-svg--black"
+                    <label for="phone" class="unique">
+                        <span>Contact</span>
+                        <input type="tel" placeholder="Contact" id="phone" required>
+                    </label>
+                    <label for="subject" class="unique">
+                        <span>Sujet</span>
+                        <input type="text" name="Sujet" id="subject" placeholder="Votre Sujet" required>
+                    </label>
+                    <label for="message" class="unique">
+                        <span>Message</span>
+                        <textarea rows="5" id="message" required placeholder="Comment pouvons-nous vous aider ?"></textarea>
+                    </label>
+                    <button type="submit" class="submit-btn">Envoyer le message <img class="fa-svg fa-svg--black"
                             src="assets/icons/fa/arrow-right.svg" alt=""></button>
                 </form>
             </div>
