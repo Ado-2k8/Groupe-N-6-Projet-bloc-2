@@ -157,3 +157,24 @@
     border-color: var(--accent-primary);
     box-shadow: 0 0 8px var(--accent-primary);
 }
+
+@media (max-width: 768px) {
+    #contact .container .container-right ,
+    #contact .container .container-left {
+        width: 100%;
+    }
+    #contact .container {
+        flex-direction: column;
+        padding: 1rem 1rem;
+    }
+    .contact-title{
+        font-size: 2rem;
+        width: 60%;
+    }
+    .name-email{
+        flex-direction: column;
+    }
+    .name-email label{
+        width: 100%;
+    }
+}

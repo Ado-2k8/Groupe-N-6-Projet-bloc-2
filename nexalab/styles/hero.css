@@ -40,12 +40,13 @@
  #hero {
      margin: auto;
      width: 100%;
-     height: 90vh;
+     min-height: 90vh;
+     max-height: fit-content;
      display: flex;
      align-items: center;
      justify-content: center;
      background: linear-gradient(to right, var(--bg-surface), var(--bg-main));
- }
+}
 
  #hero .container {
      width: 90%;
@@ -59,7 +60,7 @@
 
  #hero .container .container-left {
      width: 50%;
-     height: 90%;
+     height: 100%;
      display: flex;
      flex-direction: column;
      justify-content: space-around;
@@ -94,6 +95,7 @@
      width: 100%;
      height: 1px;
      background-color: rgba(255, 255, 255, 0.1);
+     margin: 1rem 0;
  }
 
  .hero-functions {
@@ -103,7 +105,7 @@
 
  #hero .container .container-right {
      width: 50%;
-     height: 90%;
+     height: auto;
      position: relative;
      display: flex;
      flex-direction: column;
@@ -126,7 +128,7 @@
 
  .hero-analyse {
      position: absolute;
-     top: 90px;
+     top: 10px;
      left: 10px;
      padding: 0.5rem 1rem;
      border-radius: 15px;
@@ -152,7 +154,7 @@
 
  .hero-progress {
      position: absolute;
-     bottom: 95px;
+     bottom: 10px;
      right: 10px;
      padding: 0.5rem 1rem;
      border-radius: 15px;
@@ -176,3 +178,35 @@
      background-color: var(--accent-primary);
      border-radius: 15px;
  }
+
+@media (max-width: 768px) {
+    #hero .container {
+        flex-direction: column;
+        padding: 100px 0;
+        height: auto;
+    }
+    #hero .container .container-left,
+    #hero .container .container-right {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+     .info.glass-effect{
+        margin: 0 0 1rem 0;
+     }
+     .hero-buttons{
+        flex-direction: column;
+     }
+     .hero-buttons button{
+        width: auto;
+     }
+    .hero-analyse {
+        top: -20px;
+        left: 5px;
+    }   
+    
+    .hero-progress {
+        bottom: -20px;
+        right: 5px;
+    }
+}
