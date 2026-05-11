@@ -1,11 +1,14 @@
 .site-header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
     width: 100%;
     height: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #04011b;
+    background-color: #202c3de5;
 }
 
 .site-logo {
@@ -41,7 +44,7 @@
     list-style: none;
     padding: 10px;
     margin-bottom: 20px;
-    background-color: #04011b;
+    background-color: #202c3d00;
 }
 
 .site-header button {
@@ -56,7 +59,7 @@
     margin-bottom: 30px;
     align-items: center;
     line-height: 0.2;
-    background-color: #04011b;
+    background-color: #202c3de5;
 }
 
 .site-navbar ul li a {
@@ -71,9 +74,9 @@
     width: 100%;
     content: " ";
     position: absolute;
-    bottom: 0;
+    bottom: 2px;
     right: 0;
-    height: 2px;
+    height: 1.5px;
     background: cyan;
     transition: 0.4s;
 }
@@ -83,9 +86,6 @@
 }
 
 @media (max-width: 768px) {
-    .site-header {
-        height: 115px;
-    }
     .site-navbar {
         position: absolute;
         top: -8px;
@@ -114,10 +114,10 @@
         padding-bottom: 0px;
         border-radius: 10px;
         line-height: 1.5;
+        background-color: #202c3d;
     }
 
     .site-navbar ul li {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         text-align: left;
     }
 
