@@ -44,22 +44,16 @@
     gap: 25px;
     list-style: none;
     padding: 10px;
-    background-color: #202c3d00;
 }
 
-#header button {
+#header .menu-icon {
     display: none;
     color: var(--accent-primary);
     width: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    border-style: none;
-    overflow-wrap: wrap;
     margin-right: 0px;
-    margin-bottom: 30px;
-    align-items: center;
-    line-height: 0.2;
-    background-color: #202c3de5;
+    margin-bottom: 20px;
+    background-color: transparent;
+    /* Compatibilité Safari */
 }
 
 .header-navbar ul li a {
@@ -95,31 +89,42 @@
 @media (max-width: 768px) {
     .header-navbar {
         position: absolute;
-        top: -8px;
-        right: 10px;
+        top: 14px;
+        right: 0px;
         visibility: hidden;
         width: auto;
         overflow: hidden;
     }
 
-    #header button {
+    #header .header-logo img {
+        height: 30px;
+        width: 30px;
+        padding-bottom: 3px;
+    }
+        
+    #header .header-title {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #header .menu-icon {
         display: block;
     }
 
-    #header button:hover+.header-navbar {
+    #header .menu-icon:hover+.header-navbar {
         visibility: visible;
     }
 
     .header-navbar:hover {
         visibility: visible;
+        
     }
-
+    
     .header-navbar ul {
         flex-direction: column;
         gap: 10px;
-        padding: 10px;
-        padding-bottom: 5px;
-        border-radius: 10px;
+        padding: 10px 10px 5px 10px;
+        border-radius: 10px 0px 0px 10px;
         line-height: 1.5;
         background-color: rgba(31, 41, 55, 0.4);
         backdrop-filter: blur(20px);
