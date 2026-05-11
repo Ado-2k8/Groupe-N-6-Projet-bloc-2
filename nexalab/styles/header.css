@@ -106,7 +106,7 @@
         display: block;
     }
 
-    #header button:hover+#header .header-navbar {
+    #header button:hover+.header-navbar {
         visibility: visible;
     }
 
@@ -118,10 +118,14 @@
         flex-direction: column;
         gap: 10px;
         padding: 10px;
-        padding-bottom: 0px;
+        padding-bottom: 5px;
         border-radius: 10px;
         line-height: 1.5;
-        background-color: #202c3d;
+        background-color: rgba(31, 41, 55, 0.4);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        /* Compatibilité Safari */
+        border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .header-navbar ul li {
