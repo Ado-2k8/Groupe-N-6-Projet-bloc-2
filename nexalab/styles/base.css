@@ -4,26 +4,17 @@
 :root {
     /* --- Palette de Couleurs --- */
     --bg-main: #051424;
-    /* Arrière-plan général */
     --bg-surface: #122131;
-    /* Arrière-plan des sections/cartes */
     --bg-surface-variant: #273647;
-    /* Arrière-plan secondaire (survol, bordures) */
     --bg-surface-lowest: #010f1f;
-    /* Arrière-plan alternatif ultra sombre */
 
     /* --- Couleurs d'Accentuation --- */
     --accent-primary: #00f5ff;
-    /* Cyan vibrant (Boutons, Icônes) */
     --accent-primary-light: #e9feff;
-    /* Cyan très clair (Gros Titres) */
     --accent-primary-dark: #00dce5;
-    /* Cyan assombri (Dégradés) */
 
     /* --- Couleurs de Texte --- */
-    /* Texte courant */
     --text-main: #d4e4fa;
-    /* Sous-titres, descriptions */
     --text-muted: #b9caca;
 
 
@@ -46,7 +37,9 @@
 
 html {
     scroll-behavior: smooth;
-    /* Défilement fluide pour les liens d'ancrage */
+    color-scheme: dark;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-primary-dark) var(--bg-surface);
 }
 
 body {
@@ -56,9 +49,29 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-primary-dark) var(--bg-surface);
 }
 
-/* Variables globales du site */
+/* Styles pour la barre de défilement du Site */
+html::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--bg-surface);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--bg-surface-variant);
+    border-radius: 999px;
+    border: 3px solid var(--bg-surface);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary-dark);
+}
 
 /* Image responsive de base */
 img {
