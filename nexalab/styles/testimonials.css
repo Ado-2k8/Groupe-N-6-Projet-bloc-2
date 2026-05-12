@@ -1,0 +1,113 @@
+.section-title {
+    text-align: center;
+    color:  white;
+    font-family: sans-serif;
+}
+h4{
+    text-align: center;
+    color: #b9caca;
+    font-family: sans-serif;
+}
+.temoignages {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-md);
+  background-color: #122131;
+}
+
+.temoignages__grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  color: #051424;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+
+.temoignage-card {
+  flex: 1;
+  min-width: 260px;
+  background-color:  #273647;
+  border: 1px solid rgba ( 255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 24px;
+  backdrop-filter: blur (10px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.temoignage-card:hover {
+  border-color: var(--bronze);
+  transform: translateY(-4px);
+}
+
+.temoignage-card--accent {
+  background-color: var(--surface-2);
+  border-color: var(--bronze);
+}
+
+.temoignage-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.temoignage-card__stars {
+  display: flex;
+  gap: 3px;
+  color: #00f5ff;
+
+}
+
+.temoignage-card__text {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #d4e4fa;
+  line-height: 1.75;
+  flex: 1;
+}
+
+.temoignage-card__author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--surface-3);
+}
+
+.temoignage-card__avatar {
+  width: 2.8rem;
+  height: 2.8rem;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid var(--bronze);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #818a8a;
+  border-radius: 8px;
+  opacity: 0.3;
+  margin-right: 7px;
+}
+
+.temoignage-card__name {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color:  #b9caca;
+}
+
+.temoignage-card__role {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: #00f5ff;
+  margin-top: 2px;
+}
+
