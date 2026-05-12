@@ -46,14 +46,13 @@
     padding: 10px;
 }
 
-#header .menu-icon {
+#header .menu-button {
     display: none;
-    color: var(--accent-primary);
-    width: 20px;
-    margin-right: 0px;
-    margin-bottom: 20px;
+    width: 30px;
     background-color: transparent;
     /* Compatibilité Safari */
+    margin-right: 5%;
+    border: none;
 }
 
 .header-navbar ul li a {
@@ -107,11 +106,11 @@
         font-weight: bold;
     }
 
-    #header .menu-icon {
+    #header .menu-button {
         display: block;
     }
 
-    #header .menu-icon:hover+.header-navbar {
+    #header .menu-button:hover+.header-navbar {
         visibility: visible;
     }
 
