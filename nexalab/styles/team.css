@@ -11,6 +11,22 @@
     flex-wrap: wrap;
 }
 
+.team-visual {
+    width: min(100%, 920px);
+    margin: 0 auto 2rem;
+    border-radius: 1.75rem;
+    overflow: hidden;
+    border: 1px solid var(--bg-surface-variant);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+}
+
+.team-visual img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    filter: saturate(0.95) contrast(1.04) brightness(0.92);
+}
+
 .team-card {
     flex: 1 1 240px;
     max-width: 340px;
@@ -47,5 +63,9 @@
 @media (max-width: 768px) {
     .team-section {
         padding: 4rem 6%;
+    }
+
+    .team-visual img {
+        height: 240px;
     }
 }
