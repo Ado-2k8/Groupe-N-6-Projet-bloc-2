@@ -2,7 +2,7 @@
 
 ## Présentation
 
-NexaLab est un laboratoire fictif d'innovation technologique pour les entreprises africaines. Cette page d'accueil présente son identité, sa mission, ses expertises, son impact, son équipe, des témoignages clients et un formulaire de contact.
+NexaLab est un laboratoire d'innovation technologique pour les entreprises africaines. Cette page d'accueil présente son identité, sa mission, ses expertises, son impact, son équipe, des témoignages clients et un formulaire de contact.
 
 Le projet respecte les contraintes du cahier des charges : HTML5 sémantique, CSS modulaire, responsive design, Flexbox, aucune dépendance JavaScript et aucun framework.
 
