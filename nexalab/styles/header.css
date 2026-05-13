@@ -22,7 +22,7 @@
 
 .header-logo img {
     height: 30px;
-    width: 30px;    
+    width: 30px;
 }
 
 .header-logo .header-title {
@@ -32,7 +32,6 @@
 }
 
 .header-navbar {
-    margin-right: 25px;
     width: auto;
     margin-right: 4%;
 }
@@ -52,6 +51,7 @@
     background-color: transparent;
     margin-right: 5%;
     border: none;
+    cursor: pointer;
 }
 
 .header-navbar ul li a {
@@ -62,10 +62,12 @@
     text-decoration: none;
     position: relative;
 }
-.header-navbar ul li a:hover{
+
+.header-navbar ul li a:hover {
     font-weight: 700;
 }
-.header-navbar ul li a::before{
+
+.header-navbar ul li a::before {
     content: " ";
     position: absolute;
     bottom: -8px;
@@ -81,13 +83,12 @@
 }
 
 .header-navbar ul li a:active {
-    color: var(--accent-primary-dim);
+    color: var(--accent-primary-dark);
 }
 
 @media (max-width: 768px) {
     .header-navbar {
         position: absolute;
-        width: auto;
         top: 80px;
         right: 5px;
         left: 5px;
@@ -101,7 +102,7 @@
         width: 30px;
         padding-bottom: 3px;
     }
-        
+
     #header .header-title {
         font-size: 15px;
         font-weight: bold;
@@ -111,15 +112,15 @@
         display: block;
     }
 
-    #header .menu-button:focus+.header-navbar{
+    #header .menu-button:hover~.header-navbar,
+    #header .menu-button:focus~.header-navbar {
         visibility: visible;
     }
 
     .header-navbar:hover {
         visibility: visible;
-        
     }
-    
+
     .header-navbar ul {
         flex-direction: column;
         gap: 10px;

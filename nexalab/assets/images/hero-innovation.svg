@@ -1,0 +1,28 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Interface technologique NexaLab</title>
+  <desc id="desc">Illustration sombre avec modules de données, réseau connecté et indicateurs d'analyse.</desc>
+  <rect width="960" height="720" rx="36" fill="#051424"/>
+  <circle cx="760" cy="130" r="170" fill="#00F5FF" fill-opacity="0.12"/>
+  <circle cx="210" cy="570" r="210" fill="#00F5FF" fill-opacity="0.08"/>
+  <rect x="96" y="88" width="768" height="544" rx="32" fill="#122131" stroke="#273647" stroke-width="2"/>
+  <rect x="136" y="132" width="288" height="164" rx="24" fill="#273647"/>
+  <rect x="456" y="132" width="368" height="164" rx="24" fill="#071B2C" stroke="#00F5FF" stroke-opacity="0.35"/>
+  <rect x="136" y="328" width="688" height="252" rx="24" fill="#071B2C" stroke="#273647" stroke-width="2"/>
+  <path d="M182 504C242 430 292 468 354 398C417 326 478 452 538 384C608 304 682 392 778 260" stroke="#00F5FF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M182 532C244 474 300 504 358 458C434 396 500 516 560 460C638 386 704 452 778 360" stroke="#D4E4FA" stroke-opacity="0.28" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="182" cy="504" r="11" fill="#00F5FF"/>
+  <circle cx="354" cy="398" r="11" fill="#00F5FF"/>
+  <circle cx="538" cy="384" r="11" fill="#00F5FF"/>
+  <circle cx="778" cy="260" r="11" fill="#00F5FF"/>
+  <rect x="176" y="172" width="150" height="16" rx="8" fill="#D4E4FA" fill-opacity="0.9"/>
+  <rect x="176" y="212" width="206" height="12" rx="6" fill="#B9CACA" fill-opacity="0.45"/>
+  <rect x="176" y="242" width="120" height="12" rx="6" fill="#00F5FF" fill-opacity="0.75"/>
+  <circle cx="520" cy="214" r="42" fill="#00F5FF" fill-opacity="0.18" stroke="#00F5FF" stroke-width="4"/>
+  <circle cx="640" cy="214" r="42" fill="#00F5FF" fill-opacity="0.1" stroke="#00F5FF" stroke-opacity="0.65" stroke-width="4"/>
+  <circle cx="760" cy="214" r="42" fill="#00F5FF" fill-opacity="0.08" stroke="#00F5FF" stroke-opacity="0.45" stroke-width="4"/>
+  <path d="M562 214H598M682 214H718" stroke="#00F5FF" stroke-width="4" stroke-linecap="round"/>
+  <rect x="176" y="372" width="112" height="14" rx="7" fill="#D4E4FA" fill-opacity="0.8"/>
+  <rect x="176" y="408" width="58" height="104" rx="12" fill="#00F5FF" fill-opacity="0.2"/>
+  <rect x="254" y="452" width="58" height="60" rx="12" fill="#00F5FF" fill-opacity="0.34"/>
+  <rect x="332" y="424" width="58" height="88" rx="12" fill="#00F5FF" fill-opacity="0.5"/>
+</svg>
