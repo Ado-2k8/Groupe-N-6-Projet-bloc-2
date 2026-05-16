@@ -1,6 +1,7 @@
 /* Importation des polices Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700&display=swap');
 
+/* Variables CSS pour la palette de couleurs et les styles globaux */
 :root {
     /* --- Palette de Couleurs --- */
     --bg-main: #051424;
@@ -35,34 +36,38 @@
     padding: 0;
 }
 
+/* Styles de base pour le document */
 html {
-    scroll-behavior: smooth;
-    color-scheme: dark;
+    scroll-behavior: smooth; /* Défilement fluide pour les ancres */
+    color-scheme: dark; /* Indique que le thème est sombre pour les navigateurs compatibles */
     scrollbar-width: thin;
-    scrollbar-color: var(--accent-primary-dark) var(--bg-surface);
+    scrollbar-color: var(--accent-primary-dark) var(--bg-surface); /* Couleurs pour les navigateurs compatibles */
 }
 
+/* Styles de base pour le corps du document */
 body {
     background-color: var(--bg-main);
     font-family: var(--font-body);
     color: var(--text-main);
     line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased; /* Améliore le rendu des polices sur les navigateurs WebKit */
+    overflow-x: hidden; /* Empêche le débordement horizontal */
     scrollbar-width: thin;
     scrollbar-color: var(--accent-primary-dark) var(--bg-surface);
 }
 
-/* Styles pour la barre de défilement du Site */
+/* Styles pour la barre de défilement du site */
 html::-webkit-scrollbar {
     width: 15px;
     height: 15px;
 }
 
+/* Style pour la piste de la barre de défilement */
 html::-webkit-scrollbar-track {
     background: var(--bg-surface);
 }
 
+/* Style pour la partie défilante de la barre de défilement */
 html::-webkit-scrollbar-thumb {
     background: var(--bg-surface-variant);
     border-radius: 999px;
@@ -79,6 +84,7 @@ img {
     display: block;
 }
 
+/* Styles pour les titres */
 h1,
 h2,
 h3,
@@ -91,18 +97,21 @@ h6 {
     margin-bottom: 1rem;
 }
 
+/* Styles pour les paragraphes */
 p {
     color: var(--text-muted);
     margin-bottom: 1rem;
     font-size: large;
 }
 
+/* Styles pour les liens */
 a {
     text-decoration: none;
     color: inherit;
     transition: color var(--transition-fast);
 }
 
+/* Styles pour les éléments interactifs */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -111,6 +120,7 @@ textarea:focus-visible {
     outline-offset: 3px;
 }
 
+/* Styles pour les boutons */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -152,6 +162,7 @@ textarea:focus-visible {
     transition: all var(--transition-normal);
 }
 
+/* Effet de verre (Glassmorphism) */
 .glass-effect {
     background-color: rgba(31, 41, 55, 0.4);
     backdrop-filter: blur(20px);
