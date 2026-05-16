@@ -15,7 +15,7 @@ nexalab/
 ├── assets/
 │   ├── icons/
 │   └── images/
-│       └── icons/
+│
 └── styles/
     ├── base.css
     ├── header.css
